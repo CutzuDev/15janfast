@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,12 +17,11 @@ export default function Home() {
           <div className="relative max-w-[500px] w-full aspect-square">
             <Image alt="" fill src={"/assets/logo.svg"} />
           </div>
-          <div className="w-full absolute inset-0 h-screen">
+          <div className="w-full absolute inset-0 h-full">
             <SparklesCore
-              id="tsparticlesfullpage"
               background="transparent"
-              minSize={0.6}
-              maxSize={1.4}
+              minSize={0.4}
+              maxSize={1}
               particleDensity={100}
               className="w-full h-full"
               particleColor="#FFFFFF"
@@ -32,12 +32,13 @@ export default function Home() {
           <div className="w-[1440px] -z-[60] blur-3xl opacity-25 bg-[radial-gradient(circle,rgba(255,255,255,1)_0%,rgba(255,255,255,0.05)_75%)] aspect-square rounded-full" />
         </div>
       </section>
-      <section className="min-h-screen relative flex justify-between w-full max-w-[1400px] items-center">
-        <div>
-          <span>Already a customer?</span>
-          <Button>
-            <div>
+      <section className="min-h-screen relative flex justify-center w-full max-w-[1400px] items-center">
+        <div className="border border-neutral-500/50 flex  items-center max-w-[1000px] w-full py-14 px-14 justify-between rounded-3xl">
+          <span className="text-4xl  font-bold">Already a customer?</span>
+          <Button variant={"gold"}>
+            <div className="flex justify-center items-center gap-2 px-12 pr-10">
               <span>Login</span>
+              <ArrowRightIcon />
             </div>
           </Button>
         </div>
