@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "border border-white/25 rounded-full",
+        default: "border bg-black/25 border-white/25 rounded-full",
         gold: "border border-neutral-500 bg-[#FFE351] rounded-md text-neutral-600",
       },
       size: {
@@ -23,7 +23,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 export interface ButtonProps
@@ -42,7 +42,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       />
     );
-  }
+  },
 );
 Button.displayName = "Button";
 

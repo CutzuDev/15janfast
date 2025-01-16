@@ -18,6 +18,7 @@
     "framer-motion": "^11.18.0",
     "lucide": "^0.471.0",
     "lucide-react": "^0.471.1",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -29,6 +30,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.10",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
