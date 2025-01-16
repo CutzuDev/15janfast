@@ -57,7 +57,7 @@ const elements: ElementProps[] = [
 
 function Cards() {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-5 p-5 md:gap-10">
+    <section className="flex w-full max-w-[1400px] flex-col items-center justify-center gap-5 p-5 md:gap-10">
       {elements.map((e, i) => {
         return <CardElement key={i} {...e} />;
       })}

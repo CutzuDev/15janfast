@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark bg-neutral-900 antialiased`}>
+      <body className={`${inter.className} dark bg-neutral-950 antialiased`}>
         <Nav />
         <div className="h-20" />
         {children}

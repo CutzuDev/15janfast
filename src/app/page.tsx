@@ -1,5 +1,6 @@
 import AlreadyClient from "@/components/sections/AlreadyClient";
 import Cards from "@/components/sections/Cards";
+import Deals from "@/components/sections/Deals";
 import Land from "@/components/sections/Land";
 import Stats from "@/components/sections/Stats";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <AlreadyClient />
       <Cards />
       <Stats />
+      <Deals />
     </div>
   );
 }
