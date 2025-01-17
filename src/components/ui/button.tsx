@@ -9,8 +9,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "border bg-black/25 border-white/25 rounded-full",
-        gold: "border border-neutral-500 bg-[#FFE351] rounded-md text-neutral-600",
+        default: "border bg-black/25 border-white/25 rounded-full text-white",
+        gold: "border border-neutral-500 bg-[#FFE351] font-semibold rounded-md text-neutral-950",
+        white:
+          "border border-neutral-500 bg-neutral-100 font-semibold rounded-md text-neutral-950",
       },
       size: {
         default: "h-9 px-4 py-2",

@@ -1,14 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import { SparklesCore } from "../ui/sparkles";
 
 function Land() {
   return (
     <section className="relative flex min-h-screen w-full max-w-[1400px] flex-col items-center justify-center p-5 lg:flex-row lg:justify-between">
       <div className="flex flex-col items-center justify-center gap-10 lg:items-start">
-        <Button className="px-14">#1 Reselling Community</Button>
+        <div className={`px-14 ${buttonVariants({ variant: "default" })}`}>
+          #1 Reselling Community
+        </div>
         <h1 className="max-w-[550px] text-4xl md:text-6xl lg:text-8xl">
           Lorem ipsum dolor sit amet
         </h1>

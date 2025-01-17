@@ -20,28 +20,28 @@ interface dealProps {
 const dealsData: dealProps[] = [
   {
     title: "Play Station 5",
-    imageUrl: "/assets/paypal.png",
+    imageUrl: "/assets/paypal.webp",
     description: "Lorem ipsum dolor sit amet amet inimium solor amerino",
     timestamp: "4 days ago",
     link: "https://paypal.com/integration",
   },
   {
     title: "Play Station 5",
-    imageUrl: "/assets/paypal.png",
+    imageUrl: "/assets/paypal.webp",
     description: "Lorem ipsum dolor sit amet amet inimium solor amerino",
     timestamp: "4 days ago",
     link: "https://paypal.com/integration",
   },
   {
     title: "Play Station 5",
-    imageUrl: "/assets/paypal.png",
+    imageUrl: "/assets/paypal.webp",
     description: "Lorem ipsum dolor sit amet amet inimium solor amerino",
     timestamp: "4 days ago",
     link: "https://paypal.com/integration",
   },
   {
     title: "Play Station 5",
-    imageUrl: "/assets/paypal.png",
+    imageUrl: "/assets/paypal.webp",
     description: "Lorem ipsum dolor sit amet amet inimium solor amerino",
     timestamp: "4 days ago",
     link: "https://paypal.com/integration",
@@ -50,7 +50,7 @@ const dealsData: dealProps[] = [
 
 function Deals() {
   return (
-    <section className="relative flex min-h-screen w-full max-w-[1400px] flex-col items-center justify-center gap-5 p-5">
+    <section className="relative flex w-full max-w-[1400px] flex-col items-center justify-center gap-5 p-5 py-20">
       <h2 className="text-4xl font-semibold">Future Deals</h2>
 
       <div className="flex w-full max-w-[1800px] flex-wrap items-center justify-center gap-5">

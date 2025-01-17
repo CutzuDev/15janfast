@@ -1,6 +1,6 @@
 import { BoxIcon } from "lucide-react";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { buttonVariants } from "../ui/button";
 
 type ElementProps = {
   direction: "left" | "right";
@@ -76,7 +76,7 @@ function CardElement(element: ElementProps) {
         <div className="relative aspect-square w-full max-w-[200px]">
           <Image
             alt=""
-            src={"/assets/user_icon.png"}
+            src={"/assets/user_icon.webp"}
             width={256}
             height={256}
             className="h-full w-full"
@@ -87,7 +87,9 @@ function CardElement(element: ElementProps) {
         <div className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(252,232,173,1)_25%,rgba(252,232,173,0)_50%)] opacity-15 blur-3xl"></div>
       </div>
       <div className="flex flex-col items-start justify-start gap-5">
-        <Button className="px-10">{element.notification}</Button>
+        <div className={`px-10 ${buttonVariants({ variant: "default" })}`}>
+          {element.notification}
+        </div>
         <h2 className="text-4xl font-semibold">{element.title}</h2>
         <p className="text-xl opacity-80">{element.description}</p>
         <div className="mt-5 flex w-full flex-col items-center justify-center gap-5">

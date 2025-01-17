@@ -21,13 +21,13 @@ type cardProps = {
 
 const cardData: cardProps[] = [
   {
-    logo: "/assets/wise.png",
+    logo: "/assets/wise.webp",
     title: "ACH",
     subtitle: "WISE",
     items: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
   },
   {
-    logo: "/assets/paypal.png",
+    logo: "/assets/paypal.webp",
     title: "Covered Fees",
     subtitle: "PayPal",
     items: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
