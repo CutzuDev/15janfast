@@ -21,14 +21,14 @@ function Land() {
           <Image alt="" fill src={"/assets/logo.svg"} />
         </div>
         <div className="absolute inset-0 h-full w-full">
-          {/* <SparklesCore
+           <SparklesCore
             background="transparent"
             minSize={0.4}
             maxSize={1}
             particleDensity={100}
             className="w-full h-full"
             particleColor="#FFFFFF"
-          /> */}
+          />
         </div>
       </div>
       <div className="absolute left-1/2 top-[85%] -z-50 flex h-screen w-[calc(100vw-100px)] -translate-x-1/2 -translate-y-1/2 items-center justify-center">
