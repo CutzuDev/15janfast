@@ -22,7 +22,7 @@ function page() {
     //     <div className="hidden aspect-square w-1/3 items-center justify-center bg-neutral-600 md:flex"></div>
     //   </div>
     // </main>
-    <main className="flex max-w-[100vw] min-h-[calc(100vh-5rem)] w-full items-center justify-center p-5 px-20 text-white">
+    <main className="flex min-h-[calc(100vh-5rem)] w-full max-w-[100vw] items-center justify-center overflow-hidden p-5 px-20 text-white">
       <div className="flex w-full max-w-[50%] flex-col items-center justify-center gap-10">
         <div className={buttonVariants({ variant: "default" })}>
           Let's get in touch
