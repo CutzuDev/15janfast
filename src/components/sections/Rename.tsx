@@ -4,7 +4,7 @@ import { Button, buttonVariants } from "../ui/button";
 function Rename() {
   return (
     <section className="flex w-full items-center justify-center p-5 lg:py-40">
-      <div className="relative flex w-full max-w-[1024px] flex-col items-center justify-center gap-5 overflow-hidden rounded-lg border border-white/25 py-20">
+      <div className="relative flex w-full max-w-[1024px] flex-col items-center justify-center gap-5 overflow-hidden rounded-lg border border-white/10 py-20">
         <Image
           className="absolute bottom-[2rem] left-[2rem] hidden -rotate-[15deg] lg:block"
           alt=""
@@ -30,7 +30,7 @@ function Rename() {
           Text goes here
         </span>
         <div className="flex flex-col items-center justify-center gap-10">
-          <h2 className="text-4xl font-semibold md:text-6xl">
+          <h2 className="text-4xl font-semibold text-white md:text-6xl">
             Title goes here
           </h2>
           <p className="text-xl">Paragraph goes here</p>

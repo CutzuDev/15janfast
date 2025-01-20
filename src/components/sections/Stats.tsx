@@ -36,7 +36,7 @@ const cardData: cardProps[] = [
 
 function Stats() {
   return (
-    <section className="flex w-full items-center justify-center p-5 lg:py-40">
+    <section className="-mt-[260px] flex w-full items-center justify-center p-5 lg:-mt-60 lg:pb-20">
       <div className="relative flex w-full max-w-[1024px] flex-col items-center justify-center gap-10 overflow-hidden rounded-lg bg-black/50 bg-center p-5 py-10 bg-grid-white/[0.2]">
         <div className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(0,0,0,0)_50%,rgba(0,0,0,0.9)_100%)]" />
         <div className="absolute left-1/2 top-1/2 -z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(252,232,173,1)_25%,rgba(252,232,173,0)_50%)] opacity-15 blur-3xl" />

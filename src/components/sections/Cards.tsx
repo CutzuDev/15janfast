@@ -57,7 +57,7 @@ const elements: ElementProps[] = [
 
 function Cards() {
   return (
-    <section className="flex w-full max-w-[1400px] flex-col items-center justify-center gap-5 p-5 md:gap-10">
+    <section className="flex -mt-60 min-h-[calc(100vh+75vh)] w-full flex-col items-center justify-center gap-5 overflow-x-hidden p-5 md:gap-10">
       {elements.map((e, i) => {
         return <CardElement key={i} {...e} />;
       })}
@@ -68,10 +68,17 @@ function Cards() {
 function CardElement(element: ElementProps) {
   return (
     <div
-      className={`flex w-full max-w-[1024px] flex-col items-stretch justify-center gap-10 rounded-lg bg-neutral-800 p-10 ${
+      className={`relative flex w-full max-w-[1024px] flex-col items-stretch justify-center gap-10 rounded-lg bg-neutral-800 p-10 ${
         element.direction === "left" ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
+      <div
+        className={`absolute ${
+          element.direction === "left"
+            ? "left-0 -translate-x-1/2"
+            : "right-0 translate-x-1/2"
+        } top-1/2 aspect-square w-full -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,244,215,0.1)_0%,rgba(255,244,215,0)_100%)]  blur-3xl`}
+      />
       <div className="relative hidden aspect-square w-full max-w-96 items-center justify-center divide-fuchsia-50 overflow-hidden rounded-lg bg-neutral-950/50 bg-center p-5 bg-grid-white/[0.2] md:flex md:p-10">
         <div className="relative aspect-square w-full max-w-[200px]">
           <Image
@@ -83,7 +90,6 @@ function CardElement(element: ElementProps) {
           />
         </div>
         <div className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(0,0,0,0.01)_50%,rgba(0,0,0,0.5)_100%)]"></div>
-
         <div className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(252,232,173,1)_25%,rgba(252,232,173,0)_50%)] opacity-15 blur-3xl"></div>
       </div>
       <div className="flex flex-col items-start justify-start gap-5">

@@ -11,7 +11,7 @@ function Land() {
         <div className={`px-14 ${buttonVariants({ variant: "default" })}`}>
           #1 Reselling Community
         </div>
-        <h1 className="max-w-[550px] text-4xl md:text-6xl lg:text-8xl">
+        <h1 className="max-w-[550px] text-center text-4xl md:text-6xl lg:text-8xl">
           Lorem ipsum dolor sit amet
         </h1>
       </div>
@@ -21,18 +21,18 @@ function Land() {
           <Image alt="" fill src={"/assets/logo.svg"} />
         </div>
         <div className="absolute inset-0 h-full w-full">
-           <SparklesCore
+          {/* <SparklesCore
             background="transparent"
             minSize={0.4}
             maxSize={1}
             particleDensity={100}
             className="w-full h-full"
             particleColor="#FFFFFF"
-          />
+          /> */}
         </div>
       </div>
       <div className="absolute left-1/2 top-[85%] -z-50 flex h-screen w-[calc(100vw-100px)] -translate-x-1/2 -translate-y-1/2 items-center justify-center">
-        <div className="-z-[60] aspect-square w-[1440px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,1)_0%,rgba(255,255,255,0.05)_75%)] opacity-25 blur-3xl" />
+        <div className="-z-[60] hidden aspect-square w-screen rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.15)_0%,rgba(255,255,255,0)_75%)] blur-3xl md:block" />
       </div>
     </section>
   );
