@@ -30,7 +30,7 @@ function page() {
         Have a project in mind? Looking to partner or work together? Reach out
         through the form below and I'll get back to you in the next 24-48 hours.
       </p>
-      <div className="flex w-full max-w-[900px] flex-col items-stretch justify-between gap-10 rounded-xl border border-white/20 bg-white/5 p-5 md:flex-row md:p-10">
+      <div className="flex w-full max-w-[900px] flex-col items-stretch justify-between gap-10 rounded-xl border border-white/25 bg-white/5 p-5 md:flex-row md:p-10">
         <div className="flex flex-col items-stretch justify-center gap-5">
           <div className="flex items-center justify-start gap-5">
             <div className="rounded-lg bg-white/5 p-3">

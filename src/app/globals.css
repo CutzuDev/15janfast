@@ -15,3 +15,7 @@ body {
     --radius: 0.5rem;
   }
 }
+
+a {
+  transform: scaleX();
+}

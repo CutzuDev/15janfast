@@ -50,7 +50,7 @@ const dealsData: dealProps[] = [
 
 function Deals() {
   return (
-    <section className="relative flex w-full  flex-col items-center justify-center gap-5 p-5 lg:py-20">
+    <section className="relative flex w-full flex-col items-center justify-center gap-5 p-5 lg:py-20">
       <h2 className="text-4xl font-semibold">Future Deals</h2>
 
       <div className="flex w-full max-w-[1800px] flex-wrap items-center justify-center gap-5">
