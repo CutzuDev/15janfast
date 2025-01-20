@@ -21,7 +21,7 @@ function Land() {
           <Image alt="" fill src={"/assets/logo.svg"} />
         </div>
         <div className="absolute inset-0 h-full w-full">
-          <SparklesCore
+           <SparklesCore
             background="transparent"
             minSize={0.4}
             maxSize={1}
