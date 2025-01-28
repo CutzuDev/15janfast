@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import TextGradient from "../ui/gradienttext";
 
 interface dealProps {
   title: string;
@@ -51,7 +52,7 @@ const dealsData: dealProps[] = [
 function Deals() {
   return (
     <section className="relative flex w-full flex-col items-center justify-center gap-5 p-5 lg:py-20">
-      <h2 className="text-4xl font-semibold">Future Deals</h2>
+      <TextGradient sizing={"title"}>Future Deals</TextGradient>
 
       <div className="flex w-full max-w-[1800px] flex-wrap items-center justify-center gap-5">
         {dealsData.map((e, i) => {

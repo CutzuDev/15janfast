@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import TextGradient from "../ui/gradienttext";
+import { Button } from "../ui/button";
 
 function Footer() {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-5 text-white">
+    <section className="flex w-full flex-col items-center justify-center gap-10 text-white">
       <div className="flex flex-col items-center justify-center">
         <div className="flex h-full items-center justify-center">
           <div className="aspect-square w-16 p-2.5">
@@ -15,15 +17,23 @@ function Footer() {
               src={"/assets/logo_gold.webp"}
             />
           </div>
-          <span className="text-white/75">Cashout Kings</span>
+          <TextGradient sizing={"title"}>Cashout Kings</TextGradient>
         </div>
         <span className="text-xl font-semibold">Lorem ipsum</span>
         <span>Lorem ipsum</span>
+        <Button
+          className="mt-10 h-14 px-14 text-xl"
+          rounded={"full"}
+          variant={"gold"}
+          size={"lg"}
+        >
+          Get Started
+        </Button>
       </div>
-      <div className="h-px w-full bg-neutral-200/10" />
-      <div className="relative px-5 mb-5 flex w-full items-center justify-between text-white/75">
+      <div className="h-px w-full bg-amber-300/10" />
+      <div className="relative mb-10 flex h-20 w-full items-center justify-between px-5 text-white/75">
         <span>©CK 2025, All rights reserved.</span>
-        <ul className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center gap-5">
+        <ul className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center gap-5">
           <li className="flex items-center justify-center rounded-full bg-neutral-400 p-2.5">
             <Link href={""}>
               <svg className="aspect-square w-6 fill-white" viewBox="0 0 24 24">
