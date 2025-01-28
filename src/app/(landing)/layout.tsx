@@ -1,4 +1,5 @@
-import Nav from "@/components/mainNav";
+import Footer from "@/components/universal/footer";
+import Nav from "@/components/universal/mainNav";
 
 export default function BlogLayout({
   children,
@@ -10,6 +11,7 @@ export default function BlogLayout({
       <Nav />
       <div className="h-20" />
       {children}
+      <Footer />
     </>
   );
 }

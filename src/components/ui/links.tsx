@@ -28,7 +28,7 @@ export default function Links() {
           );
         })}
       </ul>
-      <div className="z-50 -mr-2.5 flex aspect-square h-full items-center justify-center p-5 pr-0 lg:hidden">
+      <div className="z-50 flex aspect-square h-full items-center justify-center pr-0 lg:hidden">
         <Button
           onClick={() => setOpened(!opened)}
           className="aspect-square h-full px-0"
