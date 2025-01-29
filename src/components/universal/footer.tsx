@@ -31,7 +31,7 @@ function Footer() {
         </Button>
       </div>
       <div className="h-px w-full bg-amber-300/10" />
-      <div className="relative mb-10 flex h-20 w-full items-center justify-between px-5 text-white/75">
+      <div className="relative mb-10 flex h-20 w-full items-center justify-between lg:px-20 px-5 text-white/75">
         <span>©CK 2025, All rights reserved.</span>
         <ul className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center gap-5">
           <li className="flex items-center justify-center rounded-full bg-neutral-400 p-2.5">
