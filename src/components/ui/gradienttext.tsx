@@ -3,12 +3,11 @@ import { cva, VariantProps } from "class-variance-authority";
 import * as React from "react";
 
 const textVariants = cva(
-  "from-neutral-500 to-neutral-100 bg-clip-text text-transparent",
+  "from-neutral-400 to-neutral-100 bg-clip-text text-transparent",
   {
     variants: {
       sizing: {
-        opening:
-          "font-semibold text-6xl md:text-8xl text-center xl:text-left  2xl:text-9xl",
+        opening: "font-semibold text-6xl md:text-8xl text-center xl:text-left ",
         title: "font-semibold text-2xl md:text-4xl lg:text-6xl",
       },
       direction: {

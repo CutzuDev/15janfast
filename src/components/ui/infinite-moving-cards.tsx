@@ -68,7 +68,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-[900px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative mt-10 z-20 max-w-[900px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className,
       )}
       //   [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]
@@ -90,6 +90,7 @@ export const InfiniteMovingCards = ({
                 src={"/assets/walmart.svg"}
                 width={256}
                 height={128}
+                className="h-10 object-contain"
               />
             </li>
           ))}

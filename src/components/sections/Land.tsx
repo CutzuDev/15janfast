@@ -23,13 +23,13 @@ function Land() {
             <br />
             SIMPLE & FAST
           </TextGradient>
-          <p className="max-w-[700px] text-xl text-white/75 lg:pr-10">
+          <p className="max-w-[700px] text-lg text-white/50 lg:pr-10">
             Selling individual items can be slow and frustrating. We've spent
             over a decade building partnerships that enable fast, bulk
             distribution, so you avoid platform fees, shipping headaches, and
             payment delays. Get your earnings quickly and hassle-free.
           </p>
-          <Button className="px-14" size={"lg"} variant={"gold"}>
+          <Button className="px-14 mt-10" size={"lg"} variant={"gold"}>
             Log in
           </Button>
           <InfiniteMovingCards direction="right" speed="fast" />
