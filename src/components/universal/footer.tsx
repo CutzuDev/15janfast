@@ -17,7 +17,7 @@ function Footer() {
               src={"/assets/logo_gold.webp"}
             />
           </div>
-          <TextGradient sizing={"title"}>Cashout Kings</TextGradient>
+          <TextGradient className="text-3xl font-semibold pr-5" >Cashout Kings</TextGradient>
         </div>
         <span className="text-xl font-semibold">Lorem ipsum</span>
         <span>Lorem ipsum</span>
